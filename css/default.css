@@ -81,6 +81,10 @@ header span {
     font-weight: bold;
     margin-top: 10px;
 }
+.brief{
+    font-weight: bold;
+    margin-top: 5px;
+}
 
 .main>p {
     text-align: center;

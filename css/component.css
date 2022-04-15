@@ -23,7 +23,7 @@
     height: 175px;
 }
 
-.og-grid li.og-expanded>a::after {
+.og-grid li.panded>a::after {
     top: auto;
     border: solid transparent;
     content: " ";
@@ -46,7 +46,7 @@
     margin-top: 45px;
     text-align: left;
     height: 0;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .og-expander-inner {
@@ -92,7 +92,7 @@
     width: 50%;
     float: left;
     height: 100%;
-    overflow: hidden;
+    overflow: scroll;
     position: relative;
 }
 
