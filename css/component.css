@@ -23,7 +23,7 @@
     height: 175px;
 }
 
-.og-grid li.panded>a::after {
+.og-grid li.og-expanded>a::after {
     top: auto;
     border: solid transparent;
     content: " ";
