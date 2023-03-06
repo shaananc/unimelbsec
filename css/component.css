@@ -92,7 +92,7 @@
     width: 50%;
     float: left;
     height: 100%;
-    overflow: scroll;
+    /*overflow: scroll;*/
     position: relative;
 }
 
