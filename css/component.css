@@ -46,7 +46,7 @@
     margin-top: 45px;
     text-align: left;
     height: 0;
-    /*overflow: scroll;*/
+    overflow: scroll;
 }
 
 .og-expander-inner {
@@ -92,7 +92,7 @@
     width: 50%;
     float: left;
     height: 100%;
-    /*overflow: scroll;*/
+    overflow: scroll;
     position: relative;
 }
 
