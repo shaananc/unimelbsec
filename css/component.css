@@ -248,3 +248,10 @@
 p {
     font-weight: bold;
 }
+
+table tr {
+ display: table-cell;
+}
+table tr td {
+ display: block;
+}
