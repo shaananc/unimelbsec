@@ -46,7 +46,7 @@
     margin-top: 45px;
     text-align: left;
     height: 0;
-    overflow: scroll;
+    /*overflow: scroll;*/
 }
 
 .og-expander-inner {
