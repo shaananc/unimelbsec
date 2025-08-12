@@ -3,6 +3,12 @@
 # up-to-date news should be placed at the very front of this file
 [[news]]
 type = "News"
+description = "Congratulations to Olya, Renata, and Ben on their 3-year project awarded by the Office of National Intelligence (ONI), National Intelligence Defence Grant (NIDG) to work on securing data flow in AI systems."
+time ="22 Jul, 2025"
+url="https://rmsoni.researchgrants.gov.au/RMS/Report/Download/Report/1b0c8b2e-7bb0-4f2d-8f52-ad207cfbb41d/10"
+people = "olya"
+[[news]]
+type = "News"
 description = "Congratulations to Faxing, Shaanan, and Joseph on their new FC 25 paper: SoK: trusted setups for powers-of-tau strings"
 time ="24 Dec, 2024"
 url="https://fc25.ifca.ai/preproceedings/159.pdf"
