@@ -3,6 +3,12 @@
 # up-to-date news should be placed at the very front of this file
 [[news]]
 type = "News"
+description = "Congratulations to Shaanan on being awarded the ARC DECRA Fellowship to work on privacy-enhancing technologies to protect young people online."
+time ="01 Dec, 2026"
+url="https://rms.arc.gov.au/RMS/Report/Download/Report/a3f6be6e-33f7-4fb5-98a6-7526aaa184cf/285"
+people = "shaanan"
+[[news]]
+type = "News"
 description = "Congratulations to Olya, Renata, and Ben on their 3-year project awarded by the Office of National Intelligence (ONI), National Intelligence Defence Grant (NIDG) to work on securing data flow in AI systems."
 time ="22 Jul, 2025"
 url="https://rmsoni.researchgrants.gov.au/RMS/Report/Download/Report/1b0c8b2e-7bb0-4f2d-8f52-ad207cfbb41d/10"
