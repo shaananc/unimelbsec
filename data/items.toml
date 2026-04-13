@@ -245,6 +245,15 @@ url = "https://www.linkedin.com/in/tian-qiu-5a5709194"
 buttontext = "Visit researcher profile"
 
 
+[[student]]
+title = "Xinyu Tu"
+image = "images/full/xinyu.jpg"
+thumb = "images/thumb/xinyu.jpg"
+alt = "Xinyu Tu"
+description = "Xinyu Tu is currently working toward the Ph.D. degree with the School of Computer Science, Fudan University, Shanghai, China. His research interests include data security, secure multi-party learning, and multi-party computation. He has been involved in several national and industry-funded projects focusing on privacy-preserving machine learning frameworks from 2021 to 2026. From 2026 to 2027, he is a Visiting Scholar at the School of Computing and Information Systems, the University of Melbourne, Melbourne, Australia."
+url = ""
+buttontext = "Visit researcher profile"
+
 
 [[student]]
 title = "Wenqi Yan"
@@ -252,6 +261,15 @@ image = "images/full/Wenqi.jpg"
 thumb = "images/thumb/Wenqi.jpg"
 alt = "Wenqi Yan"
 description = ""
+url = ""
+buttontext = "Visit researcher profile"
+
+[[student]]
+title = "Haitian Liu"
+image = "images/full/haotian.jpg"
+thumb = "images/thumb/haotian.jpg"
+alt = "Haitian Liu"
+description = "Haotian is a PhD student interested in agentic systems and how to make them more robust and secure."
 url = ""
 buttontext = "Visit researcher profile"
 
