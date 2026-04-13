@@ -168,9 +168,35 @@ description = "Rob was a postdoctoral researcher who is broadly interested in di
 url = "https://www.robs-cse.com"
 buttontext = "Visit researcher profile"
 
+[[alumni]]
+title = "Faxing Wang"
+image = "images/full/faxing.jpg"
+thumb = "images/thumb/faxing.jpg"
+alt = "Faxing Wang"
+description = "Faxing is a PhD student. He is interested in magic tricks that can be done by cryptography"
+url = "https://www.faxingwang.net/"
+buttontext = "Visit researcher profile"
 
-#for phds
-[[student]]
+[[alumni]]
+title = "Zhiyuan Zhang"
+image = "images/full/zzy.jpg"
+thumb = "images/thumb/zzy.jpeg"
+alt = "Zhiyuan Zhang"
+description = "Zhiyuan a PhD student. He is interested in side-channel analysis and cryptography."
+url = "https://neo-outis.github.io/"
+buttontext = "Visit researcher profile"
+
+
+[[alumni]]
+title = "Jiankai Jin"
+image = "images/full/jiankai.jpg"
+thumb = "images/thumb/jiankai.jpg"
+alt = "Jiankai Jin"
+description = "Jiankai is a PhD student. He is interested in machine learning privacy and robustness."
+url = "https://www.linkedin.com/in/jin-jiankai-3a5750119/"
+buttontext = "Visit researcher profile"
+
+[[alumni]]
 title = "Jingyi Chen"
 image = "images/full/Jingyi.jpg"
 thumb = "images/thumb/Jingyi.jpg"
@@ -179,6 +205,16 @@ description = ""
 url = ""
 buttontext = "Visit researcher profile"
 
+[[alumni]]
+title = "Pengbo Yan"
+image = "images/full/Pengbo.jpg"
+thumb = "images/thumb/PengboBW.jpg"
+alt = "Pengbo Yan"
+description = "Pengbo is a PhD student interested in formal verification."
+url = "https://au.linkedin.com/in/pengbo-yan-7b48471b2"
+buttontext = "Visit researcher profile"
+
+#for phds
 [[student]]
 title = "Wentao Gao"
 image = "images/full/Wentao_color.jpg"
@@ -188,14 +224,6 @@ description = "Wentao is a PhD student interested in human-in-the-loop fuzzing."
 url = "https://www.linkedin.com/in/wentao-gao-ab9535244/"
 buttontext = "Visit researcher profile"
 
-[[student]]
-title = "Jiankai Jin"
-image = "images/full/jiankai.jpg"
-thumb = "images/thumb/jiankai.jpg"
-alt = "Jiankai Jin"
-description = "Jiankai is a PhD student. He is interested in machine learning privacy and robustness."
-url = "https://www.linkedin.com/in/jin-jiankai-3a5750119/"
-buttontext = "Visit researcher profile"
 
 [[student]]
 title = "Viet Hoang Luu"
@@ -216,23 +244,7 @@ description = "Tian Qiu is a PhD student. She is interested in Automated Program
 url = "https://www.linkedin.com/in/tian-qiu-5a5709194"
 buttontext = "Visit researcher profile"
 
-[[student]]
-title = "Faxing Wang"
-image = "images/full/faxing.jpg"
-thumb = "images/thumb/faxing.jpg"
-alt = "Faxing Wang"
-description = "Faxing is a PhD student. He is interested in magic tricks that can be done by cryptography"
-url = "https://www.faxingwang.net/"
-buttontext = "Visit researcher profile"
 
-[[student]]
-title = "Pengbo Yan"
-image = "images/full/Pengbo.jpg"
-thumb = "images/thumb/PengboBW.jpg"
-alt = "Pengbo Yan"
-description = "Pengbo is a PhD student interested in formal verification."
-url = "https://au.linkedin.com/in/pengbo-yan-7b48471b2"
-buttontext = "Visit researcher profile"
 
 [[student]]
 title = "Wenqi Yan"
@@ -241,14 +253,5 @@ thumb = "images/thumb/Wenqi.jpg"
 alt = "Wenqi Yan"
 description = ""
 url = ""
-buttontext = "Visit researcher profile"
-
-[[student]]
-title = "Zhiyuan Zhang"
-image = "images/full/zzy.jpg"
-thumb = "images/thumb/zzy.jpeg"
-alt = "Zhiyuan Zhang"
-description = "Zhiyuan a PhD student. He is interested in side-channel analysis and cryptography."
-url = "https://neo-outis.github.io/"
 buttontext = "Visit researcher profile"
 
