@@ -65,8 +65,8 @@ mail ="xingliang.yuan@unimelb.edu.au"
 
 [[faculty]]
 title = "Shangqi Lai"
-image = "images/full/shangqi.JPG"
-thumb = "images/thumb/shangqi.JPG"
+image = "images/full/shangqi.jpg"
+thumb = "images/thumb/shangqi.jpg"
 alt = "Shangqi Lai"
 description = "Shangqi is a Lecturer, whose research focuses on the security and privacy issues of network systems deployed with popular techniques, such as End-to-End Encryption communications, network function virtualisation and AI. Also, his research aims to systematically adopt privacy-enhancing technologies to guarantee identity/data confidentiality, protect critical network infrastructures and resources, as well as improve the reliability of next generation networks, e.g., networks with the Zero-Trust architecture and 5G&Beyond mobile wireless communications."
 url = "https://shangqi-lai.github.io"
