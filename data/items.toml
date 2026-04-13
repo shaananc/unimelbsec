@@ -4,7 +4,7 @@ title = "Toby Murray"
 image = "images/full/toby.jpg"
 thumb = "images/thumb/toby.jpg"
 alt = "Toby Murray"
-description = "Toby is an Associate Professor whose research is focused on the problem of how to build highly secure computing systems cost-effectively. Prior to joining Melbourne in May 2016, he was employed in the Software Systems Research Group of NICTA (now Data61), and was a Conjoint Senior Lecturer in the school of Computer Science and Engineering of UNSW. "
+description = "Toby is a Professor whose research is focused on the problem of how to build highly secure computing systems cost-effectively. Prior to joining Melbourne in May 2016, he was employed in the Software Systems Research Group of NICTA (now Data61), and was a Conjoint Senior Lecturer in the school of Computer Science and Engineering of UNSW. "
 url = "https://people.eng.unimelb.edu.au/tobym/"
 buttontext = "Visit researcher profile"
 mail="toby.murray@unimelb.edu.au"
@@ -14,18 +14,48 @@ title = "Olya Ohrimenko"
 image = "images/full/olya.jpg"
 thumb = "images/thumb/olya.jpg"
 alt = "Olya Ohrimenko"
-description = "Olya is an Associate Professor whose research interests include  privacy, integrity and security of machine learning algorithms, data analysis tools, multi-party computation and systems relying on cloud storage, computation and hardware. Prior to joining the University of Melbourne she spent 6 years at Microsoft Research in Cambridge, UK, where she was a principal researcher leading work on Confidential AI and I/O side-channel mitigation."
+description = "Olya is a Professor whose research interests include  privacy, integrity and security of machine learning algorithms, data analysis tools, multi-party computation and systems relying on cloud storage, computation and hardware. Prior to joining the University of Melbourne she spent 6 years at Microsoft Research in Cambridge, UK, where she was a principal researcher leading work on Confidential AI and I/O side-channel mitigation."
 url = "https://people.eng.unimelb.edu.au/oohrimenko/"
 buttontext = "Visit researcher profile"
 mail="oohrimenko@unimelb.edu.au"
 
 
 [[faculty]]
+title = "Benjamin Rubinstein"
+image = "images/full/ben.jpg"
+thumb = "images/thumb/ben.jpg"
+alt = "Benjamin Rubinstein"
+description = """Professor Benjamin Rubinstein is interested in security & privacy aspects of machine learning, such as adversarial learning and differential privacy. Prior to joining the University of Melbourne in 2013, Ben worked at Microsoft Research Silicon Valley and IBM Research Australia, and received the PhD (Computer Science) from UC Berkeley in 2010. He has been part of teams that have: analysed privacy at the Australian Bureau of Statistics, a major bank, and Transport for NSW; robustness of translation systems to data poisoning attacks with Facebook; helped identify and plug side-channel attacks against the Firefox browser; and deanonymised Victorian Myki transport data and an unprecedented Australian Medicare data release, prompting introduction of the Re-identification Offence Bill 2016. He is co-lead of the [CATCH](https://catch-muri.org/) Joint MURI-AUSMURI which has been funded by over AUD $8m to convene a team of 16 experts across 7 universities for fundamental discovery in robust human-AI teams for cybersecurity."""
+url = "https://www.bipr.net/"
+buttontext = "Visit researcher profile"
+mail ="benjamin.rubinstein@unimelb.edu.au"
+
+[[faculty]]
+title = "Udaya Parampalli"
+image = "images/full/udaya.jpg"
+thumb = "images/thumb/udaya.jpg"
+alt = "Udaya Parampalli"
+description = "Udaya Parampalli is a Professor in the School of Computing and Information Systems at The University of Melbourne. He is internationally recognised for his contributions to pseudorandom sequences and their applications in cryptography, coding theory, and communications, and he leads strategic research initiatives in quantum computing. His research spans security, cryptography, coding theory, and information hiding, with a strong focus on foundational assumptions underlying modern cryptographic systems."
+url = "https://findanexpert.unimelb.edu.au/profile/5683-udaya-parampalli"
+buttontext = "Visit researcher profile"
+mail ="udaya@unimelb.edu.au"
+
+[[faculty]]
+title = "Xingliang Yuan"
+image = "images/full/xyuan.jpg"
+thumb = "images/thumb/xyuan.jpg"
+alt = "Xingliang Yuan"
+description = "Xingliang Yuan is an Associate Professor in the School of Computing and Information Systems, the University of Melbourne. Prior to that, he was a faculty member at Monash University from 2017 to 2024. Xingliang has a keen interest in designing systems, protocols to address real-world privacy and security challenges. His current research focuses on data security and privacy, secure networked system, and trustworthy machine learning. His research has been supported by Australian Research Council, CSIRO, Australian Department of Home Affairs, Australian Department of Health and Aged Care, and the Oceania Cyber Security Centre. His work has been published in major venues of computer security and systems, such as CCS, S&P, USENIX Security, NDSS, TDSC, TIFS, etc. He is a sole recipient of the Dean's Award for Excellence in Research by an Early Career Researcher (2020), and the Faculty Teaching Excellence Award (2021) at Monash. He is a co-recipient of the best paper award in the European Symposium on Research in Computer Security (ESORICS) 2021. He is currently on the editorial board of IEEE Transactions on Dependable and Secure Computing (TDSC) and IEEE Transactions on Service Computing (TSC). He served as a track co-chair of ICDCS'24, WISE'24, and a program co-chair of Lamps@CCS'24 and SecTL@AsiaCCS'23. "
+url = "https://xyuancs.github.io/"
+buttontext = "Visit researcher profile"
+mail ="xingliang.yuan@unimelb.edu.au"
+
+[[faculty]]
 title = "Shaanan Cohney"
 image = "images/full/shaanan.png"
 thumb = "images/thumb/shaanan.png"
 alt = "Shaanan Cohney"
-description = "Shaanan is a Lecturer whose research centers on the interplay between computer systems and the law, with particular focus on applications of cryptography. Shaanan recently completed a Postdoctoral Fellowship at Princeton University. Prior to that he served in the office of U.S Senator Ron Wyden as a Cybersecurity Fellow."
+description = "Shaanan is a Senior Lecturer and ARC DECRA Fellow whose research centers on the interplay between computer systems and the law, with particular focus on applications of cryptography. Shaanan recently completed a Postdoctoral Fellowship at Princeton University. Prior to that he served in the office of U.S Senator Ron Wyden as a Cybersecurity Fellow."
 url = "https://cohney.info"
 buttontext = "Visit researcher profile"
 mail="shaanan@cohney.info"
@@ -39,29 +69,6 @@ description = "Thuan Pham is a Senior Lecturer in Cyber Security at the Universi
 url = "https://thuanpv.github.io/"
 buttontext = "Visit researcher profile"
 mail="thuan.pham@unimelb.edu.au"
-
-
-[[faculty]]
-title = "Benjamin Rubinstein"
-image = "images/full/ben.jpg"
-thumb = "images/thumb/ben.jpg"
-alt = "Benjamin Rubinstein"
-description = """Professor Benjamin Rubinstein is interested in security & privacy aspects of machine learning, such as adversarial learning and differential privacy. Prior to joining the University of Melbourne in 2013, Ben worked at Microsoft Research Silicon Valley and IBM Research Australia, and received the PhD (Computer Science) from UC Berkeley in 2010. He has been part of teams that have: analysed privacy at the Australian Bureau of Statistics, a major bank, and Transport for NSW; robustness of translation systems to data poisoning attacks with Facebook; helped identify and plug side-channel attacks against the Firefox browser; and deanonymised Victorian Myki transport data and an unprecedented Australian Medicare data release, prompting introduction of the Re-identification Offence Bill 2016. He is co-lead of the [CATCH](https://catch-muri.org/) Joint MURI-AUSMURI which has been funded by over AUD $8m to convene a team of 16 experts across 7 universities for fundamental discovery in robust human-AI teams for cybersecurity."""
-url = "https://www.bipr.net/"
-buttontext = "Visit researcher profile"
-mail ="benjamin.rubinstein@unimelb.edu.au"
-
-
-
-[[faculty]]
-title = "Xingliang Yuan"
-image = "images/full/xyuan.jpg"
-thumb = "images/thumb/xyuan.jpg"
-alt = "Chitchanok Chuengsatiansup"
-description = "Xingliang Yuan is an Associate Professor in the School of Computing and Information Systems, the University of Melbourne. Prior to that, he was a faculty member at Monash University from 2017 to 2024. Xingliang has a keen interest in designing systems, protocols to address real-world privacy and security challenges. His current research focuses on data security and privacy, secure networked system, and trustworthy machine learning. His research has been supported by Australian Research Council, CSIRO, Australian Department of Home Affairs, Australian Department of Health and Aged Care, and the Oceania Cyber Security Centre. His work has been published in major venues of computer security and systems, such as CCS, S&P, USENIX Security, NDSS, TDSC, TIFS, etc. He is a sole recipient of the Dean's Award for Excellence in Research by an Early Career Researcher (2020), and the Faculty Teaching Excellence Award (2021) at Monash. He is a co-recipient of the best paper award in the European Symposium on Research in Computer Security (ESORICS) 2021. He is currently on the editorial board of IEEE Transactions on Dependable and Secure Computing (TDSC) and IEEE Transactions on Service Computing (TSC). He served as a track co-chair of ICDCS'24, WISE'24, and a program co-chair of Lamps@CCS'24 and SecTL@AsiaCCS'23. "
-url = "https://xyuancs.github.io/"
-buttontext = "Visit researcher profile"
-mail ="xingliang.yuan@unimelb.edu.au"
 
 [[faculty]]
 title = "Shangqi Lai"
@@ -117,6 +124,15 @@ image = "images/full/Amir.jpg"
 thumb = "images/thumb/Amir.jpg"
 alt = "Amir Pasdar"
 description = "Amir Mohammad is a Research Fellow in Software Security who previously worked as a Research Associate at UNSW Canberra, collaborating to develop a new threat-detection model for protecting Internet of Things (IoT)-based combat systems. He has participated in research projects nationally and internationally with various universities and received additional funds and grants from industry and academia. His research interests shifted towards cyber security in resource-constrained devices, particularly enhancing IoTs and smartphones' real-time on-device vulnerability detection performance."
+url = ""
+buttontext = "Visit researcher profile"
+
+[[research]]
+title = "Yujin Huang"
+image = "images/full/yujin.jpg"
+thumb = "images/thumb/yujin.jpg"
+alt = "Yujin Huang"
+description = "Yujin Huang is a Research Fellow whose work focuses on trustworthy on-device AI and software security, with particular emphasis on the security of on-device deep learning and mobile agent privacy. He earned his PhD from the University of Melbourne and was the sole recipient of the 2023 Dean's Award for Excellence by a Graduate Research Student in the Department of Software Systems and Cybersecurity at Monash University."
 url = ""
 buttontext = "Visit researcher profile"
 
@@ -250,7 +266,7 @@ title = "Xinyu Tu"
 image = "images/full/xinyu.jpg"
 thumb = "images/thumb/xinyu.jpg"
 alt = "Xinyu Tu"
-description = "Xinyu Tu is currently working toward the Ph.D. degree with the School of Computer Science, Fudan University, Shanghai, China. His research interests include data security, secure multi-party learning, and multi-party computation. He has been involved in several national and industry-funded projects focusing on privacy-preserving machine learning frameworks from 2021 to 2026. From 2026 to 2027, he is a Visiting Scholar at the School of Computing and Information Systems, the University of Melbourne, Melbourne, Australia."
+description = "Xinyu Tu is currently working toward the Ph.D. degree with the School of Computer Science, Fudan University, Shanghai, China. His research interests include data security, secure multi-party learning, and multi-party computation. From 2026 to 2027, he is a Visiting Scholar at the School of Computing and Information Systems, the University of Melbourne, Melbourne, Australia."
 url = ""
 buttontext = "Visit researcher profile"
 
@@ -265,11 +281,39 @@ url = ""
 buttontext = "Visit researcher profile"
 
 [[student]]
-title = "Haitian Liu"
+title = "Haotian Liu"
 image = "images/full/haotian.jpg"
 thumb = "images/thumb/haotian.jpg"
 alt = "Haitian Liu"
 description = "Haotian is a PhD student interested in agentic systems and how to make them more robust and secure."
 url = ""
 buttontext = "Visit researcher profile"
+
+[[student]]
+title = "Zewei Shi"
+image = "images/full/zewei.jpg"
+thumb = "images/thumb/zewei.jpg"
+alt = "Zewei Shi"
+description = "Zewei graduated from the University of Sydney with a Bachelor of Advanced Computing (Honours) in 2023. He is currently a PhD candidate at the University of Melbourne, and his research interests focus on multimodal large language models (MLLMs) for digital trust. Before starting his PhD, he worked as a research intern at CSIRO’s Data61. He now serves as a bridge to promote collaboration between the University of Melbourne and CSIRO’s Data61."
+url = ""
+buttontext = "Visit researcher profile"
+
+[[student]]
+title = "Xiangyu Hui"
+image = "images/full/xiangyu.jpg"
+thumb = "images/thumb/xiangyu.jpg"
+alt = "Xiangyu Hui"
+description = "Xiangyu Hui is a PhD candidate in Engineering and IT at the University of Melbourne. His research focuses on encrypted data retrieval, zero-knowledge proofs, and secure protocols. He was previously a Research Associate at CSIRO Data61."
+url = ""
+buttontext = "Visit researcher profile"
+
+[[student]]
+title = "Jiahao Yang"
+image = "images/full/jiahao.jpg"
+thumb = "images/thumb/jiahao.jpg"
+alt = "Jiahao Yang"
+description = "Jiahao Yang is a Ph.D. student. His research interests primary focus on trustworthy machine learning, including aspects such as robustness, privacy, and interpretability."
+url = ""
+buttontext = "Visit researcher profile"
+
 
