@@ -1,6 +1,0 @@
-[submodule "themes/hugrid"]
-path = themes/hugrid
-url = git@github.com:aerohub/hugrid.git
-[submodule "themes/PaperMod"]
-	path = themes/PaperMod
-	url = https://github.com/adityatelange/hugo-PaperMod.git

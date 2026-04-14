@@ -1,0 +1,18 @@
+<article class="news-item">
+  <div class="news-item__meta">
+    <span class="news-item__kind">{{ include.item.kind }}</span>
+    <time datetime="{{ include.item.date | date_to_xmlschema }}">{{ include.item.date | date: "%-d %b %Y" }}</time>
+  </div>
+  <h3 class="news-item__title">
+    {% if include.item.external_url and include.item.external_url != "" %}
+      <a href="{{ include.item.external_url }}">{{ include.item.title }}</a>
+    {% else %}
+      {{ include.item.title }}
+    {% endif %}
+  </h3>
+  {% if include.item.summary and include.item.summary != "" %}
+    <div class="news-item__summary">
+      {{ include.item.summary | markdownify }}
+    </div>
+  {% endif %}
+</article>

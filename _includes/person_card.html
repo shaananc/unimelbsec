@@ -1,0 +1,48 @@
+{% assign display_name = include.person.title %}
+{% if include.person.group == "faculty" %}
+  {% if include.person.summary contains "Associate Professor" %}
+    {% assign display_name = "A/Prof. " | append: include.person.title %}
+  {% elsif include.person.summary contains "Professor" %}
+    {% assign display_name = "Prof. " | append: include.person.title %}
+  {% elsif include.person.summary contains "Senior Lecturer" or include.person.summary contains "Lecturer" %}
+    {% assign display_name = "Dr " | append: include.person.title %}
+  {% endif %}
+{% elsif include.person.group == "postdocs" %}
+  {% assign display_name = "Dr " | append: include.person.title %}
+{% endif %}
+
+<article class="person-card">
+  <button
+    class="person-card__surface"
+    type="button"
+    data-person-modal-open
+    data-person-key="{{ include.person.title | slugify }}"
+    data-person-name="{{ display_name | escape }}"
+    data-person-role="{{ include.person.role | escape }}"
+    data-person-image="{{ include.person.image | relative_url | escape }}"
+    data-person-alt="{{ include.person.alt | default: include.person.title | escape }}"
+    data-person-profile-url="{{ include.person.profile_url | default: '' | escape }}"
+    data-person-email="{{ include.person.email | default: '' | escape }}"
+    aria-haspopup="dialog"
+    aria-controls="person-modal"
+  >
+    <img
+      class="person-card__image"
+      src="{{ include.person.image | relative_url }}"
+      alt="{{ include.person.alt | default: include.person.title }}"
+      loading="lazy"
+    >
+    <div class="person-card__body">
+      <p class="person-card__role">{{ include.person.role }}</p>
+      <h4>{{ display_name }}</h4>
+    </div>
+    <span class="person-card__icon" aria-hidden="true">+</span>
+  </button>
+  <div class="person-card__modal-content" hidden>
+    {% if include.person.summary and include.person.summary != "" %}
+      <div class="person-card__summary">
+        {{ include.person.summary | markdownify }}
+      </div>
+    {% endif %}
+  </div>
+</article>

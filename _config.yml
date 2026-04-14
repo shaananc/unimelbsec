@@ -1,0 +1,31 @@
+title: Security Research at the University of Melbourne
+description: Research in systems security, cryptography, formal methods, privacy, and trustworthy AI at the University of Melbourne.
+url: "https://brokenassumptions.org"
+baseurl: ""
+markdown: kramdown
+permalink: pretty
+timezone: Australia/Melbourne
+
+collections:
+  people:
+    output: false
+  news:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: people
+    values:
+      layout: none
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: none
+
+exclude:
+  - themes
+  - public
+  - vendor
+  - Gemfile.lock

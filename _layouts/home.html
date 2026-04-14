@@ -1,0 +1,199 @@
+---
+layout: default
+---
+{% assign faculty = site.people | where: "group", "faculty" | sort: "order" %}
+{% assign postdocs = site.people | where: "group", "postdocs" | sort: "order" %}
+{% assign students = site.people | where: "group", "students" | sort: "order" %}
+{% assign alumni = site.people | where: "group", "alumni" | sort: "order" %}
+{% assign latest_news = site.news | sort: "date" | reverse %}
+
+<section class="hero">
+  <div class="shell">
+    <div class="hero__copy">
+      <p class="eyebrow">CS Security Research Group</p>
+      <h1>Security research at the University of Melbourne.</h1>
+      <p class="hero__lede">
+        We work across cryptography, formal methods, software and systems security, privacy,
+        and trustworthy machine learning.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="people">
+  <div class="shell">
+    <div class="section-heading section-heading--split">
+      <div>
+        <p class="eyebrow">People</p>
+        <h2>Teaching and research faculty</h2>
+      </div>
+      <a class="section-link" href="#more-people">Researchers, students, and alumni</a>
+    </div>
+
+    <div class="people-block people-block--faculty">
+      <div class="people-grid people-grid--faculty">
+        {% for person in faculty %}
+          {% include person_card.html person=person %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--accent" id="news">
+  <div class="shell">
+    <div class="section-heading section-heading--split">
+      <div>
+        <p class="eyebrow">News</p>
+        <h2>Recent updates from the group</h2>
+      </div>
+      <a class="section-link" href="{{ '/news/' | relative_url }}">Browse the archive</a>
+    </div>
+
+    <div class="news-list">
+      {% for item in latest_news limit: 10 %}
+        {% include news_item.html item=item %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="more-people">
+  <div class="shell">
+    <div class="section-heading">
+      <p class="eyebrow">People</p>
+      <h2>Researchers, students, and alumni</h2>
+      <p>The group brings together systems, cryptography, privacy, and AI security researchers across career stages.</p>
+    </div>
+
+    <div class="people-block">
+      <div class="people-block__header">
+        <h3>Postdoctoral researchers</h3>
+      </div>
+      <div class="people-grid">
+        {% for person in postdocs %}
+          {% include person_card.html person=person %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="people-block">
+      <div class="people-block__header">
+        <h3>PhD students</h3>
+      </div>
+      <div class="people-grid">
+        {% for person in students %}
+          {% include person_card.html person=person %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="people-block">
+      <div class="people-block__header">
+        <h3>Alumni</h3>
+      </div>
+      <div class="people-grid">
+        {% for person in alumni %}
+          {% include person_card.html person=person %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<dialog class="person-modal" id="person-modal" aria-labelledby="person-modal-title">
+  <form class="person-modal__frame" method="dialog">
+    <button class="person-modal__close" type="submit" aria-label="Close profile">Close</button>
+    <div class="person-modal__layout">
+      <img class="person-modal__image" src="" alt="" hidden>
+      <div class="person-modal__copy">
+        <p class="eyebrow person-modal__eyebrow" id="person-modal-role"></p>
+        <h2 id="person-modal-title"></h2>
+        <div class="person-modal__summary" id="person-modal-summary"></div>
+        <div class="person-modal__actions" id="person-modal-actions"></div>
+      </div>
+    </div>
+  </form>
+</dialog>
+
+<script>
+  (() => {
+    const modal = document.getElementById("person-modal");
+    if (!modal) return;
+
+    const title = document.getElementById("person-modal-title");
+    const role = document.getElementById("person-modal-role");
+    const image = modal.querySelector(".person-modal__image");
+    const summary = document.getElementById("person-modal-summary");
+    const actions = document.getElementById("person-modal-actions");
+    let activeKey = "";
+
+    const openPersonModal = (trigger) => {
+        title.textContent = trigger.dataset.personName || "";
+        role.textContent = trigger.dataset.personRole || "";
+        activeKey = trigger.dataset.personKey || "";
+
+        if (trigger.dataset.personImage) {
+          image.src = trigger.dataset.personImage;
+          image.alt = trigger.dataset.personAlt || "";
+          image.hidden = false;
+        } else {
+          image.hidden = true;
+          image.removeAttribute("src");
+          image.alt = "";
+        }
+
+        const sourceSummary = trigger.parentElement.querySelector(".person-card__modal-content");
+        summary.innerHTML = sourceSummary ? sourceSummary.innerHTML : "";
+        actions.innerHTML = "";
+
+        if (trigger.dataset.personProfileUrl) {
+          const profileLink = document.createElement("a");
+          profileLink.className = "button-link";
+          profileLink.href = trigger.dataset.personProfileUrl;
+          profileLink.textContent = "Visit website";
+          actions.appendChild(profileLink);
+        }
+
+        if (trigger.dataset.personEmail) {
+          const emailLink = document.createElement("a");
+          emailLink.className = "text-link";
+          emailLink.href = `mailto:${trigger.dataset.personEmail}`;
+          emailLink.textContent = trigger.dataset.personEmail;
+          actions.appendChild(emailLink);
+        }
+
+        modal.showModal();
+        if (activeKey) {
+          history.replaceState(null, "", `#person:${activeKey}`);
+        }
+    };
+
+    document.querySelectorAll("[data-person-modal-open]").forEach((trigger) => {
+      trigger.addEventListener("click", () => openPersonModal(trigger));
+    });
+
+    modal.addEventListener("click", (event) => {
+      const rect = modal.getBoundingClientRect();
+      const inside =
+        event.clientX >= rect.left &&
+        event.clientX <= rect.right &&
+        event.clientY >= rect.top &&
+        event.clientY <= rect.bottom;
+      if (!inside) modal.close();
+    });
+
+    modal.addEventListener("close", () => {
+      if (location.hash.startsWith("#person:")) {
+        history.replaceState(null, "", location.pathname + location.search);
+      }
+      activeKey = "";
+    });
+
+    if (location.hash.startsWith("#person:")) {
+      const key = location.hash.slice("#person:".length);
+      const trigger = document.querySelector(`[data-person-key="${key}"]`);
+      if (trigger) openPersonModal(trigger);
+    }
+  })();
+</script>
