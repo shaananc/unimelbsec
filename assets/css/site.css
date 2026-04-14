@@ -100,25 +100,32 @@ main {
 
 .site-header__brand {
   flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.08rem;
   text-decoration: none;
 }
 
-.site-header__brand-short,
-.site-header__brand-full {
+.site-header__brand-name,
+.site-header__brand-tagline {
   display: block;
   font-family: var(--font-body);
-  font-weight: 600;
-  letter-spacing: 0.015em;
+  letter-spacing: 0.01em;
   text-transform: none;
 }
 
-.site-header__brand-short {
+.site-header__brand-name {
   font-size: 1rem;
+  font-weight: 600;
 }
 
-.site-header__brand-full {
-  display: none;
-  font-size: 1rem;
+.site-header__brand-tagline {
+  color: var(--accent);
+  font-size: 0.74rem;
+  font-family: var(--font-meta);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .site-nav {
@@ -224,9 +231,9 @@ main {
   margin: 0 0 0.45rem;
   color: var(--accent);
   font-size: 0.72rem;
-  font-family: var(--font-meta);
+  font-family: var(--font-body);
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -706,18 +713,45 @@ h4 {
 
 .trustedthings-highlight,
 .trustedthings-funding-item {
+  position: relative;
   padding: 0.9rem 0.95rem;
   border-radius: 18px;
+  border: 1px solid rgba(23, 32, 51, 0.08);
+  background: rgba(255, 250, 243, 0.72);
+  transition: transform 160ms ease, border-color 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
+}
+
+.trustedthings-highlight::before,
+.trustedthings-funding-item::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  border-radius: 18px 0 0 18px;
+  background: rgba(143, 45, 31, 0.18);
+  transition: background-color 160ms ease, width 160ms ease;
 }
 
 .trustedthings-highlight--featured {
   background: rgba(255, 245, 237, 0.92);
+  border-color: rgba(143, 45, 31, 0.12);
 }
 
 .trustedthings-highlight h3,
 .trustedthings-funding-item h3 {
   font-size: var(--step-1);
   margin-bottom: 0.28rem;
+}
+
+.trustedthings-card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.trustedthings-card-link:focus-visible {
+  outline: 2px solid rgba(143, 45, 31, 0.35);
+  outline-offset: 4px;
 }
 
 .trustedthings-tag {
@@ -826,6 +860,25 @@ h4 {
   .news-item:hover {
     background: rgba(255, 250, 243, 0.45);
     border-color: rgba(143, 45, 31, 0.2);
+  }
+
+  .trustedthings-highlight:hover,
+  .trustedthings-funding-item:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 252, 247, 0.94);
+    border-color: rgba(143, 45, 31, 0.2);
+    box-shadow: 0 14px 24px rgba(23, 32, 51, 0.08);
+  }
+
+  .trustedthings-highlight:hover::before,
+  .trustedthings-funding-item:hover::before {
+    width: 6px;
+    background: rgba(143, 45, 31, 0.72);
+  }
+
+  .trustedthings-highlight:hover .trustedthings-card-link,
+  .trustedthings-funding-item:hover .trustedthings-card-link {
+    color: var(--accent);
   }
 
   .person-modal__close:hover {
@@ -946,14 +999,6 @@ h4 {
 }
 
 @media (min-width: 960px) {
-  .site-header__brand-short {
-    display: none;
-  }
-
-  .site-header__brand-full {
-    display: block;
-  }
-
   .hero h1 {
     white-space: nowrap;
   }

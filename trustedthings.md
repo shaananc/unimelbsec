@@ -98,24 +98,32 @@ permalink: /trustedthings/
     <div class="trustedthings-highlights">
       <article class="trustedthings-highlight trustedthings-highlight--featured">
         <p class="trustedthings-tag">Awarded paper</p>
-        <h3><a href="https://dl.acm.org/doi/10.1145/3597503.3608133">Detecting Excessive Data Exposures in Web Server Responses with Metamorphic Fuzzing</a></h3>
-        <p>Lianglu Pan, Shaanan Cohney, Toby Murray, and Van-Thuan Pham. ICSE 2024.</p>
-        <p>Received the Distinguished Paper Award at the 46th ACM/IEEE International Conference on Software Engineering.</p>
+        <a class="trustedthings-card-link" href="https://dl.acm.org/doi/10.1145/3597503.3608133">
+          <h3>Detecting Excessive Data Exposures in Web Server Responses with Metamorphic Fuzzing</h3>
+          <p>Lianglu Pan, Shaanan Cohney, Toby Murray, and Van-Thuan Pham. ICSE 2024.</p>
+          <p>Received the Distinguished Paper Award at the 46th ACM/IEEE International Conference on Software Engineering.</p>
+        </a>
       </article>
       <article class="trustedthings-highlight">
         <p class="trustedthings-tag">Paper</p>
-        <h3><a href="https://dl.acm.org/doi/10.1145/3713081.3731717">Trailblazer: Practical End-to-end Web API Fuzzing</a></h3>
-        <p>Lianglu Pan, Shaanan Cohney, Toby Murray, and Van-Thuan Pham. ISSTA 2025 Registered Report.</p>
+        <a class="trustedthings-card-link" href="https://dl.acm.org/doi/10.1145/3713081.3731717">
+          <h3>Trailblazer: Practical End-to-end Web API Fuzzing</h3>
+          <p>Lianglu Pan, Shaanan Cohney, Toby Murray, and Van-Thuan Pham. ISSTA 2025 Registered Report.</p>
+        </a>
       </article>
       <article class="trustedthings-highlight">
         <p class="trustedthings-tag">Paper</p>
-        <h3><a href="https://arxiv.org/abs/2602.10487">Following Dragons: Code Review-Guided Fuzzing</a></h3>
-        <p>Viet Hoang Luu, Amirmohammad Pasdar, Wachiraphan Charoenwet, Toby Murray, Shaanan Cohney, and Van-Thuan Pham. 2026 arXiv preprint.</p>
+        <a class="trustedthings-card-link" href="https://arxiv.org/abs/2602.10487">
+          <h3>Following Dragons: Code Review-Guided Fuzzing</h3>
+          <p>Viet Hoang Luu, Amirmohammad Pasdar, Wachiraphan Charoenwet, Toby Murray, Shaanan Cohney, and Van-Thuan Pham. 2026 arXiv preprint.</p>
+        </a>
       </article>
       <article class="trustedthings-highlight">
         <p class="trustedthings-tag">Patent</p>
-        <h3><a href="https://ipsearch.ipaustralia.gov.au/patents/2022903182">System and Method for Detecting Excessive Data Exposures</a></h3>
-        <p>Australian Provisional Patent 2022903182. Lianglu Pan, Toby Murray, Thuan Pham, and Shaanan Cohney.</p>
+        <a class="trustedthings-card-link" href="https://ipsearch.ipaustralia.gov.au/patents/2022903182">
+          <h3>System and Method for Detecting Excessive Data Exposures</h3>
+          <p>Australian Provisional Patent 2022903182. Lianglu Pan, Toby Murray, Thuan Pham, and Shaanan Cohney.</p>
+        </a>
       </article>
     </div>
   </section>
