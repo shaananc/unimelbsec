@@ -2,6 +2,7 @@
 title: "Lianglu Pan"
 group: faculty
 role: "Faculty"
+title_prefix: "Dr"
 order: 109
 image: "/static/images/full/lianglu.jpg"
 alt: "Lianglu Pan"

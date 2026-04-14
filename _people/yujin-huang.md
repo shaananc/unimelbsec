@@ -2,6 +2,7 @@
 title: "Yujin Huang"
 group: postdocs
 role: "Postdoctoral Researcher"
+title_prefix: "Dr"
 order: 205
 image: "/static/images/full/yujin.jpg"
 alt: "Yujin Huang"

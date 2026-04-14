@@ -2,6 +2,7 @@
 title: "Olya Ohrimenko"
 group: faculty
 role: "Faculty"
+title_prefix: "Prof."
 order: 102
 image: "/static/images/full/olya.jpg"
 alt: "Olya Ohrimenko"

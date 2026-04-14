@@ -2,6 +2,7 @@
 title: "Benjamin Rubinstein"
 group: faculty
 role: "Faculty"
+title_prefix: "Prof."
 order: 103
 image: "/static/images/full/ben.jpg"
 alt: "Benjamin Rubinstein"

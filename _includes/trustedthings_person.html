@@ -1,10 +1,6 @@
 {% assign display_name = include.person.title %}
-{% if include.person.summary contains "Associate Professor" %}
-  {% assign display_name = "A/Prof. " | append: include.person.title %}
-{% elsif include.person.summary contains "Professor" %}
-  {% assign display_name = "Prof. " | append: include.person.title %}
-{% elsif include.person.summary contains "Senior Lecturer" or include.person.summary contains "Associate Lecturer" or include.person.summary contains "Lecturer" or include.person.group == "postdocs" or include.person.summary contains "Research Fellow" %}
-  {% assign display_name = "Dr " | append: include.person.title %}
+{% if include.person.title_prefix and include.person.title_prefix != "" %}
+  {% assign display_name = include.person.title_prefix | append: " " | append: include.person.title %}
 {% endif %}
 
 <article class="trustedthings-person{% if include.lead %} trustedthings-person--lead{% endif %}">

@@ -2,6 +2,7 @@
 title: "Toby Murray"
 group: faculty
 role: "Faculty"
+title_prefix: "Prof."
 order: 101
 image: "/static/images/full/toby.jpg"
 alt: "Toby Murray"

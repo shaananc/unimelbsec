@@ -2,6 +2,7 @@
 title: "Xingliang Yuan"
 group: faculty
 role: "Faculty"
+title_prefix: "A/Prof."
 order: 105
 image: "/static/images/full/xyuan.jpg"
 alt: "Xingliang Yuan"

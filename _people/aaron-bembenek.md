@@ -2,6 +2,7 @@
 title: "Aaron Bembenek"
 group: postdocs
 role: "Postdoctoral Researcher"
+title_prefix: "Dr"
 order: 201
 image: "/static/images/full/aaron_headshot.jpeg"
 alt: "Aaron Bembenek"

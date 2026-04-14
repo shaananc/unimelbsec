@@ -68,12 +68,14 @@ permalink: /trustedthings/
     <div class="trustedthings-panel">
       <div class="trustedthings-heading">
         <p class="eyebrow">Research</p>
-        <h2>What the collaborative works on</h2>
+        <h2>What we work on</h2>
       </div>
       <ul class="trustedthings-list">
-        <li>Vulnerability discovery for Web APIs and other difficult-to-test systems.</li>
-        <li>Dynamic software testing methods that exploit feedback, metamorphic relations, and program structure.</li>
-        <li>Practical combinations of systems reasoning, formal ideas, and fuzzing for real-world software security.</li>
+        <li>Finding vulnerabilities in software systems that are hard to test with conventional methods.</li>
+        <li>Web APIs, stateful network protocols, and other systems with incomplete specifications, deep state, or weak bug oracles.</li>
+        <li>Automated testing methods that recover structure from real artefacts and use that structure to drive fuzzing.</li>
+        <li>Metamorphic fuzzing for excessive data exposure, end-to-end fuzzing for undocumented APIs, stronger stateful protocol fuzzing, and code-review-guided fuzzing.</li>
+        <li>Making vulnerability discovery work on systems that standard fuzzing handles poorly.</li>
       </ul>
     </div>
     <div class="trustedthings-panel">
@@ -82,9 +84,8 @@ permalink: /trustedthings/
         <h2>Shared supervision and project work</h2>
       </div>
       <ul class="trustedthings-list">
-        <li>Joint PhD supervision spanning Lianglu Pan's work on challenging-to-test Web applications, Viet Hoang Luu's work on source-code-guided automated software testing, and Tian (Jack) Zhang's current doctoral work.</li>
-        <li>Shared masters-project activity spanning Matthew Pham, Ryan Chen, Han Perry, Xiaocong Zhang, Qingyun Wu, Michael Maxwell Wenn, Haodong Gu, Zachary Duthie, and Simon Kelly, backed in part by a CSA research contract for two masters projects in 2024.</li>
-        <li>DSTG-supported supervision and collaborative project development around testing and vulnerability discovery.</li>
+        <li>Joint PhD and Masters supervision, shared tool-building, and partner-linked project work in automated software security.</li>
+        <li>Recent student work spanning Web API security testing, protocol fuzzing and reverse engineering, and source-code- and review-guided test generation.</li>
       </ul>
     </div>
   </section>

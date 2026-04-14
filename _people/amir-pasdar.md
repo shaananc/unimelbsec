@@ -2,6 +2,7 @@
 title: "Amir Pasdar"
 group: postdocs
 role: "Postdoctoral Researcher"
+title_prefix: "Dr"
 order: 204
 image: "/static/images/full/Amir.jpg"
 alt: "Amir Pasdar"

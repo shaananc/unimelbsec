@@ -2,6 +2,7 @@
 title: "Thuan Pham"
 group: faculty
 role: "Faculty"
+title_prefix: "Dr"
 order: 107
 image: "/static/images/full/thuan.jpg"
 alt: "Thuan Pham"

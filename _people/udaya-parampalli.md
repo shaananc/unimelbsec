@@ -2,6 +2,7 @@
 title: "Udaya Parampalli"
 group: faculty
 role: "Faculty"
+title_prefix: "Prof."
 order: 104
 image: "/static/images/full/udaya.jpg"
 alt: "Udaya Parampalli"

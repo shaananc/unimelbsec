@@ -2,6 +2,7 @@
 title: "Shangqi Lai"
 group: faculty
 role: "Faculty"
+title_prefix: "Dr"
 order: 108
 image: "/static/images/full/shangqi.jpg"
 alt: "Shangqi Lai"

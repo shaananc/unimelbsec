@@ -2,6 +2,7 @@
 title: "Shaanan Cohney"
 group: faculty
 role: "Faculty"
+title_prefix: "Dr"
 order: 106
 image: "/static/images/full/shaanan.png"
 alt: "Shaanan Cohney"
