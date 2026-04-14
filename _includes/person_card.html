@@ -2,6 +2,17 @@
 {% if include.person.title_prefix and include.person.title_prefix != "" %}
   {% assign display_name = include.person.title_prefix | append: " " | append: include.person.title %}
 {% endif %}
+{% assign image_url = "" %}
+{% if include.person.image and include.person.image != "" %}
+  {% assign image_url = include.person.image | relative_url %}
+{% endif %}
+{% assign name_parts = include.person.title | split: " " %}
+{% assign first_initial = name_parts.first | slice: 0, 1 | upcase %}
+{% assign initials = first_initial %}
+{% if name_parts.size > 1 %}
+  {% assign last_initial = name_parts.last | slice: 0, 1 | upcase %}
+  {% assign initials = first_initial | append: last_initial %}
+{% endif %}
 
 <article class="person-card">
   <button
@@ -11,8 +22,9 @@
     data-person-key="{{ include.person.title | slugify }}"
     data-person-name="{{ display_name | escape }}"
     data-person-role="{{ include.person.role | escape }}"
-    data-person-image="{{ include.person.image | relative_url | escape }}"
+    data-person-image="{{ image_url | escape }}"
     data-person-alt="{{ include.person.alt | default: include.person.title | escape }}"
+    data-person-initials="{{ initials | escape }}"
     data-person-profile-url="{{ include.person.profile_url | default: '' | escape }}"
     data-person-email="{{ include.person.email | default: '' | escape }}"
     aria-haspopup="dialog"
@@ -27,7 +39,7 @@
       >
     {% else %}
       <div class="person-card__image person-card__image--placeholder" aria-hidden="true">
-        <span>No photo</span>
+        <span>{{ initials }}</span>
       </div>
     {% endif %}
     <div class="person-card__body">

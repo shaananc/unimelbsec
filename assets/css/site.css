@@ -390,9 +390,11 @@ h4 {
     linear-gradient(135deg, rgba(143, 45, 31, 0.12), rgba(23, 32, 51, 0.08)),
     #e6ddd1;
   color: var(--muted);
-  font-family: var(--font-meta);
-  font-size: 0.74rem;
-  letter-spacing: 0.08em;
+  font-family: var(--font-sans);
+  font-size: clamp(1.35rem, 1.1rem + 0.5vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
   text-transform: uppercase;
 }
 
@@ -816,6 +818,27 @@ h4 {
   object-fit: cover;
   border-radius: 18px;
   background: #d9d2c8;
+}
+
+.person-modal__placeholder {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 1 / 1.05;
+  border-radius: 18px;
+  background: linear-gradient(160deg, rgba(217, 210, 200, 0.9), rgba(197, 188, 176, 0.9));
+  color: rgba(23, 32, 51, 0.55);
+  font-family: var(--font-sans);
+  font-size: clamp(2.2rem, 1.6rem + 1vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.person-modal__image[hidden],
+.person-modal__placeholder[hidden] {
+  display: none !important;
 }
 
 .person-modal__eyebrow {
