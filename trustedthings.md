@@ -76,7 +76,7 @@ hide_page_heading: true
     <div class="trustedthings-subgroup">
       <h3>Masters students</h3>
       <p>
-        Matthew Pham, Ryan Chen, Han Perry, Xiaocong Zhang, Qingyun Wu, Michael Maxwell Wenn,
+        Matthew Pham, Runzhou (Ryan) Chen, Han Perry, Xiaocong Zhang, Qingyun Wu, Michael Maxwell Wenn,
         Haodong Gu, Zachary Duthie, and Simon Kelly.
       </p>
     </div>
