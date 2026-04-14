@@ -6,6 +6,9 @@ layout: default
 {% assign students = site.people | where: "group", "students" | sort: "order" %}
 {% assign alumni = site.people | where: "group", "alumni" | sort: "order" %}
 {% assign latest_news = site.news | sort: "path" | reverse %}
+{% assign featured_news = latest_news | slice: 0, 3 %}
+{% assign featured_news_pool = latest_news | slice: 0, 8 %}
+{% assign featured_writing = site.data.writing | slice: 0, 6 %}
 
 <section class="hero">
   <div class="shell">
@@ -19,6 +22,139 @@ layout: default
   </div>
 </section>
 
+<section class="section section--compact">
+  <div class="shell">
+    <div class="feature-callout feature-callout--highlights">
+      <div class="feature-callout__intro">
+        <p class="eyebrow">Current Highlights</p>
+        <h2>Active research, recent news, and people.</h2>
+        <p>Start with recent updates, then browse faculty and the wider group.</p>
+      </div>
+      <div class="feature-callout__stack">
+        <div class="feature-callout__news" data-featured-news>
+          {% for item in featured_news %}
+            <article class="feature-callout__news-item">
+              <p class="feature-callout__meta">{{ item.date | date: "%-d %b %Y" }}</p>
+              {% if item.external_url and item.external_url != "" %}
+                <a href="{{ item.external_url }}">{{ item.home_title | default: item.title }}</a>
+              {% else %}
+                <span>{{ item.home_title | default: item.title }}</span>
+              {% endif %}
+            </article>
+          {% endfor %}
+        </div>
+        <div class="feature-callout__actions">
+          <a class="section-link" href="#news">More news</a>
+          <a class="section-link" href="#people">Faculty</a>
+          <a class="section-link" href="{{ '/trustedthings/' | relative_url }}">TrustedThings</a>
+        </div>
+      </div>
+    </div>
+    <script type="application/json" id="featured-news-pool">
+      [
+        {% for item in featured_news_pool %}
+          {
+            "title": {{ item.title | jsonify }},
+            "home_title": {{ item.home_title | default: item.title | jsonify }},
+            "date_display": {{ item.date | date: "%-d %b %Y" | jsonify }},
+            "url": {{ item.external_url | default: "" | jsonify }}
+          }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]
+    </script>
+    <script>
+      (() => {
+        const target = document.querySelector("[data-featured-news]");
+        const dataNode = document.getElementById("featured-news-pool");
+        if (!target || !dataNode) return;
+
+        let candidates = [];
+        try {
+          candidates = JSON.parse(dataNode.textContent);
+        } catch (_error) {
+          return;
+        }
+
+        if (!Array.isArray(candidates) || candidates.length <= 3) return;
+
+        const inferSubjectKey = (title) => {
+          const normalized = String(title || "").trim();
+          const congratulationMatch = normalized.match(/^congratulations to (.+?) (?:on|for|as|with)\b/i);
+          if (congratulationMatch) {
+            return congratulationMatch[1]
+              .toLowerCase()
+              .replace(/\band\b/g, ",")
+              .replace(/\s+/g, " ")
+              .trim();
+          }
+
+          const paperMatch = normalized.match(/^([A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,2})\b/);
+          if (paperMatch) {
+            return paperMatch[1].toLowerCase();
+          }
+
+          return normalized.toLowerCase();
+        };
+
+        const selected = [];
+        const usedSubjects = new Set();
+
+        for (const item of candidates) {
+          if (selected.length === 0) {
+            selected.push(item);
+            usedSubjects.add(inferSubjectKey(item.title));
+            continue;
+          }
+
+          const subjectKey = inferSubjectKey(item.title);
+          if (!usedSubjects.has(subjectKey)) {
+            selected.push(item);
+            usedSubjects.add(subjectKey);
+          }
+
+          if (selected.length === 3) break;
+        }
+
+        if (selected.length < 3) {
+          for (const item of candidates) {
+            if (selected.includes(item)) continue;
+            selected.push(item);
+            if (selected.length === 3) break;
+          }
+        }
+
+        if (selected.length < 3) return;
+
+        target.replaceChildren(
+          ...selected.map((item) => {
+            const article = document.createElement("article");
+            article.className = "feature-callout__news-item";
+
+            const meta = document.createElement("p");
+            meta.className = "feature-callout__meta";
+            meta.textContent = item.date_display;
+
+            article.appendChild(meta);
+
+            if (item.url) {
+              const link = document.createElement("a");
+              link.href = item.url;
+              link.textContent = item.home_title || item.title;
+              article.appendChild(link);
+            } else {
+              const span = document.createElement("span");
+              span.textContent = item.home_title || item.title;
+              article.appendChild(span);
+            }
+
+            return article;
+          })
+        );
+      })();
+    </script>
+  </div>
+</section>
+
 <section class="section" id="people">
   <div class="shell">
     <div class="section-heading section-heading--split">
@@ -26,7 +162,7 @@ layout: default
         <p class="eyebrow">People</p>
         <h2>Teaching and research faculty</h2>
       </div>
-      <a class="section-link" href="#more-people">Researchers, students, and alumni</a>
+      <a class="section-link section-link--quiet" href="#more-people">Researchers, students, and alumni</a>
     </div>
 
     <div class="people-block people-block--faculty">
@@ -46,12 +182,35 @@ layout: default
         <p class="eyebrow">News</p>
         <h2>Recent updates from the group</h2>
       </div>
-      <a class="section-link" href="{{ '/news/' | relative_url }}">Browse the archive</a>
+      <a class="section-link section-link--quiet" href="{{ '/news/' | relative_url }}">Browse the archive</a>
     </div>
 
     <div class="news-list">
       {% for item in latest_news limit: 10 %}
-        {% include news_item.html item=item %}
+        {% include news_item.html item=item use_home_title=true %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--compact" id="writing">
+  <div class="shell">
+    <div class="section-heading section-heading--split">
+      <div>
+        <p class="eyebrow">Writing</p>
+        <h2>Public writing and commentary</h2>
+      </div>
+      <a class="section-link section-link--quiet" href="{{ '/writing/' | relative_url }}">More writing</a>
+    </div>
+
+    <div class="writing-grid">
+      {% for item in featured_writing %}
+        <article class="writing-item">
+          <p class="writing-item__meta">{{ item.venue }}{% if item.format %} · {{ item.format }}{% endif %} · {{ item.date | date: "%-d %b %Y" }}</p>
+          <h3 class="writing-item__title"><a href="{{ item.url }}">{{ item.title }}</a></h3>
+          <p class="writing-item__authors">{{ item.authors }}</p>
+          <p class="writing-item__summary">{{ item.summary }}</p>
+        </article>
       {% endfor %}
     </div>
   </div>
