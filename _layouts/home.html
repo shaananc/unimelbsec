@@ -5,12 +5,11 @@ layout: default
 {% assign postdocs = site.people | where: "group", "postdocs" | sort: "order" %}
 {% assign students = site.people | where: "group", "students" | sort: "order" %}
 {% assign alumni = site.people | where: "group", "alumni" | sort: "order" %}
-{% assign latest_news = site.news | sort: "date" | reverse %}
+{% assign latest_news = site.news | sort: "path" | reverse %}
 
 <section class="hero">
   <div class="shell">
     <div class="hero__copy">
-      <p class="eyebrow">CS Security Research Group</p>
       <h1>Security research at the University of Melbourne.</h1>
       <p class="hero__lede">
         We work across cryptography, formal methods, software and systems security, privacy,

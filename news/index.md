@@ -3,7 +3,7 @@ layout: page
 title: News
 description: Recent publications, grants, awards, and group updates.
 ---
-{% assign all_news = site.news | sort: "date" | reverse %}
+{% assign all_news = site.news | sort: "path" | reverse %}
 <div class="news-list">
   {% for item in all_news %}
     {% include news_item.html item=item %}
