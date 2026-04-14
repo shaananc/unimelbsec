@@ -1,5 +1,5 @@
 ---
-title: "Joseph Bonneau"
+title: "A/Prof Joseph Bonneau"
 group: alumni
 role: "Alumni"
 order: 403

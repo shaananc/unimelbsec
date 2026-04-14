@@ -7,9 +7,9 @@
   {% assign display_name = "Dr " | append: include.person.title %}
 {% endif %}
 
-<article class="person-card">
+<article class="trustedthings-person{% if include.lead %} trustedthings-person--lead{% endif %}">
   <button
-    class="person-card__surface"
+    class="trustedthings-person__surface"
     type="button"
     data-person-modal-open
     data-person-key="{{ include.person.title | slugify }}"
@@ -23,22 +23,12 @@
     aria-controls="person-modal"
   >
     {% if include.person.image and include.person.image != "" %}
-      <img
-        class="person-card__image"
-        src="{{ include.person.image | relative_url }}"
-        alt="{{ include.person.alt | default: include.person.title }}"
-        loading="lazy"
-      >
+      <img src="{{ include.person.image | relative_url }}" alt="{{ include.person.alt | default: include.person.title }}">
     {% else %}
-      <div class="person-card__image person-card__image--placeholder" aria-hidden="true">
-        <span>No photo</span>
-      </div>
+      <div class="trustedthings-person__placeholder" aria-hidden="true">No photo</div>
     {% endif %}
-    <div class="person-card__body">
-      <p class="person-card__role">{{ include.person.role }}</p>
-      <h4>{{ display_name }}</h4>
-    </div>
-    <span class="person-card__icon" aria-hidden="true">+</span>
+    <h3>{{ display_name }}</h3>
+    <p>{{ include.label }}</p>
   </button>
   <div class="person-card__modal-content" data-person-modal-content hidden>
     {% if include.person.summary and include.person.summary != "" %}
