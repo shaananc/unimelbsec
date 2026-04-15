@@ -2,6 +2,7 @@
 layout: default
 ---
 {% assign faculty = site.people | where: "group", "faculty" | sort: "order" %}
+{% assign affiliate_faculty = site.people | where: "group", "affiliate_faculty" | sort: "order" %}
 {% assign postdocs = site.people | where: "group", "postdocs" | sort: "order" %}
 {% assign students = site.people | where: "group", "students" | sort: "order" %}
 {% assign alumni = site.people | where: "group", "alumni" | sort: "order" %}
@@ -174,6 +175,7 @@ layout: default
         {% endfor %}
       </div>
     </div>
+
   </div>
 </section>
 
@@ -223,7 +225,6 @@ layout: default
     <div class="section-heading">
       <p class="eyebrow">People</p>
       <h2>Researchers, students, and alumni</h2>
-      <p>The group brings together systems, cryptography, privacy, and AI security researchers across career stages.</p>
     </div>
 
     <div class="people-block">
@@ -236,6 +237,19 @@ layout: default
         {% endfor %}
       </div>
     </div>
+
+    {% if affiliate_faculty.size > 0 %}
+      <div class="people-block">
+        <div class="people-block__header">
+          <h3>Affiliate faculty</h3>
+        </div>
+        <div class="people-grid">
+          {% for person in affiliate_faculty %}
+            {% include person_card.html person=person %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
 
     <div class="people-block">
       <div class="people-block__header">
