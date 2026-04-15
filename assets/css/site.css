@@ -894,6 +894,40 @@ h4 {
   gap: 0.8rem;
 }
 
+.trustedthings-media-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.trustedthings-media-list li {
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(23, 32, 51, 0.08);
+}
+
+.trustedthings-media-list li:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.trustedthings-media-list a {
+  display: inline-block;
+  color: var(--ink);
+  font-weight: 600;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.trustedthings-media-list span {
+  display: block;
+  margin-top: 0.18rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
 .trustedthings-highlight,
 .trustedthings-funding-item {
   position: relative;
@@ -1086,6 +1120,10 @@ h4 {
 
   .trustedthings-highlight:hover .trustedthings-card-link,
   .trustedthings-funding-item:hover .trustedthings-card-link {
+    color: var(--accent);
+  }
+
+  .trustedthings-media-list a:hover {
     color: var(--accent);
   }
 

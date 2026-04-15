@@ -31,6 +31,7 @@ hide_page_heading: true
         <a href="#work">What we work on</a>
         <a href="#outcomes">Outcomes</a>
         <a href="#funding">Funding</a>
+        <a href="#media">Media</a>
       </nav>
       <p>
         TrustedThings is a collaboration between <a href="https://cohney.info/">Shaanan Cohney</a>,
@@ -183,6 +184,61 @@ hide_page_heading: true
         <h3>Feedback-Guided Security Testing for Embedded Systems</h3>
         <p>University CIS Competitive Grant · $35,000 AUD · 2023 · with Van Thuan Pham and Toby Murray</p>
       </article>
+    </div>
+  </section>
+
+  <section class="trustedthings-section trustedthings-grid" id="media">
+    <div class="trustedthings-panel">
+      <div class="trustedthings-heading">
+        <p class="eyebrow">Media</p>
+        <h2>Shaanan Cohney</h2>
+      </div>
+      <ul class="trustedthings-media-list">
+        <li>
+          <a href="https://www.theguardian.com/technology/2026/feb/02/moltbook-ai-agents-social-media-site-bots-artificial-intelligence">
+            Moltbook: AI agents swarm social media site in a bot-driven experiment
+          </a>
+          <span>The Guardian · 2 February 2026</span>
+        </li>
+        <li>
+          <a href="https://www.abc.net.au/listen/programs/worldtoday/age-verification-technology-introduced-to-australia-/106432342">
+            Age verification technology introduced to Australia
+          </a>
+          <span>ABC The World Today · 9 March 2026</span>
+        </li>
+        <li>
+          <a href="https://www.abc.net.au/listen/programs/abc-news-daily/what-are-ai-agents-and-can-they-be-trusted/106367634">
+            What are AI agents and can they be trusted?
+          </a>
+          <span>ABC News Daily / ABC Listen · 22 February 2026</span>
+        </li>
+      </ul>
+    </div>
+    <div class="trustedthings-panel">
+      <div class="trustedthings-heading">
+        <p class="eyebrow">Media</p>
+        <h2>Toby Murray</h2>
+      </div>
+      <ul class="trustedthings-media-list">
+        <li>
+          <a href="https://verse.systems/blog/post/2026-03-05-formal-verification-ai/">
+            Formal Verification in the Age of AI
+          </a>
+          <span>Toby&apos;s Blog · 5 March 2026</span>
+        </li>
+        <li>
+          <a href="https://theconversation.com/leak-of-us-military-plans-on-signal-is-a-classic-case-of-shadow-it-it-shows-why-security-systems-need-to-be-easy-to-use-253036">
+            Leak of US military plans on Signal is a classic case of shadow IT
+          </a>
+          <span>The Conversation · 25 March 2025</span>
+        </li>
+        <li>
+          <a href="https://www.abc.net.au/news/2025-04-04/drt-how-superfunds-were-hacked/105138170">
+            What we know so far about the Australian superannuation fund cyber attacks
+          </a>
+          <span>ABC News · 4 April 2025</span>
+        </li>
+      </ul>
     </div>
   </section>
 </div>
