@@ -698,76 +698,6 @@ h4 {
   margin-inline: auto;
 }
 
-.trustedthings-scientific {
-  margin-top: 1rem;
-}
-
-.trustedthings-scientific summary {
-  display: inline-flex;
-  align-items: center;
-  min-height: 2.3rem;
-  padding: 0.48rem 0.82rem;
-  border: 1px solid rgba(23, 32, 51, 0.14);
-  border-radius: 999px;
-  background: rgba(255, 250, 243, 0.82);
-  color: var(--accent);
-  font-size: var(--step--1);
-  font-weight: 700;
-  cursor: pointer;
-  list-style: none;
-  transition: transform 160ms ease, border-color 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
-}
-
-.trustedthings-scientific summary::-webkit-details-marker {
-  display: none;
-}
-
-.trustedthings-scientific summary::after {
-  content: "+";
-  margin-left: 0.5rem;
-  font-family: var(--font-meta);
-  font-size: 0.9em;
-}
-
-.trustedthings-scientific[open] summary::after {
-  content: "-";
-}
-
-.trustedthings-scientific__open {
-  display: none;
-}
-
-.trustedthings-scientific[open] .trustedthings-scientific__closed {
-  display: none;
-}
-
-.trustedthings-scientific[open] .trustedthings-scientific__open {
-  display: inline;
-}
-
-.trustedthings-scientific__content {
-  margin-top: 0.85rem;
-  padding: 0.85rem 1rem;
-  border: 1px solid rgba(23, 32, 51, 0.1);
-  border-radius: 16px;
-  background: rgba(255, 250, 243, 0.66);
-  color: var(--muted);
-  font-size: 0.94rem;
-}
-
-.trustedthings-scientific__content :first-child {
-  margin-top: 0;
-}
-
-.trustedthings-scientific__content :last-child {
-  margin-bottom: 0;
-}
-
-.trustedthings-scientific summary:focus-visible {
-  outline: 2px solid rgba(143, 45, 31, 0.45);
-  outline-offset: 3px;
-}
-
 .trustedthings-lockup {
   display: flex;
   align-items: center;
@@ -1201,13 +1131,6 @@ h4 {
     color: var(--accent);
     border-color: rgba(143, 45, 31, 0.22);
     background: rgba(255, 247, 240, 0.88);
-    transform: translateY(-1px);
-  }
-
-  .trustedthings-scientific summary:hover {
-    border-color: rgba(143, 45, 31, 0.26);
-    background: rgba(255, 247, 240, 0.92);
-    box-shadow: 0 8px 18px rgba(23, 32, 51, 0.08);
     transform: translateY(-1px);
   }
 

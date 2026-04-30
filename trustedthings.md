@@ -29,13 +29,15 @@ hide_page_heading: true
       <nav class="trustedthings-local-nav" aria-label="TrustedThings sections">
         <a href="#team">Team</a>
         <a href="#work">What we work on</a>
+        <a href="#technical">Deep tech</a>
         <a href="#outcomes">Outcomes</a>
         <a href="#funding">Funding</a>
         <a href="#media">Media</a>
       </nav>
       <p>
-        TrustedThings helps organisations find and prioritize security and privacy flaws in complex digital systems before
-        they become breaches or expensive remediation projects. We draw on organizational insight to help make this process more effective and work to drive business value.
+        TrustedThings helps organisations find and prioritise security and privacy flaws in complex
+        digital systems before they become breaches or expensive remediation projects. We draw on
+        organisational insight to help make this process more effective and work to drive business value.
       </p>
       <p>
         Led by <a href="https://cohney.info/">Shaanan Cohney</a>,
@@ -49,26 +51,6 @@ hide_page_heading: true
         provisional patent, government and industry-funded projects, and joint supervision of students
         building software security capability.
       </p>
-      <details class="trustedthings-scientific">
-        <summary>
-          <span class="trustedthings-scientific__closed">View scientific version</span>
-          <span class="trustedthings-scientific__open">Hide scientific version</span>
-        </summary>
-        <div class="trustedthings-scientific__content">
-          <p>
-            TrustedThings is a collaboration between <a href="https://cohney.info/">Shaanan Cohney</a>,
-            <a href="https://people.eng.unimelb.edu.au/tobym/">Toby Murray</a>, and
-            <a href="https://thuanpv.github.io/">Thuan Pham</a> focused on vulnerability discovery in
-            systems that are difficult to test.
-          </p>
-          <p>
-            The work integrates systems thinking, formal methods, and dynamic testing, building on prior
-            advances in scalable fuzzing and automated security testing. Current efforts include detecting
-            excessive data exposures, improving end-to-end Web API fuzzing, strengthening stateful protocol
-            fuzzing, and linking program structure and code-review context to more effective test generation.
-          </p>
-        </div>
-      </details>
     </div>
   </section>
 
@@ -128,6 +110,22 @@ hide_page_heading: true
       <ul class="trustedthings-list">
         <li>Joint PhD and Masters supervision, shared tool-building, and partner-linked project work in automated software security.</li>
         <li>Recent student work spanning Web API security testing, protocol reverse engineering, and security tests guided by source code and code review.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="trustedthings-section" id="technical">
+    <div class="trustedthings-panel">
+      <div class="trustedthings-heading">
+        <p class="eyebrow">Open problems</p>
+        <h2>Current research flavour</h2>
+      </div>
+      <ul class="trustedthings-list">
+        <li>Metamorphic and differential oracles for excessive data exposure and authorisation failures.</li>
+        <li>End-to-end Web API fuzzing without complete specifications, including dependency inference and state setup.</li>
+        <li>Stateful protocol fuzzing for systems with hidden state, long sessions, and brittle message grammars.</li>
+        <li>Program-structure, source-code, and code-review-guided fuzzing that turns human design intent into search guidance.</li>
+        <li>Evaluation methods for vulnerability discovery tools: reproducible benchmarks, bug triage, and evidence that findings matter.</li>
       </ul>
     </div>
   </section>
