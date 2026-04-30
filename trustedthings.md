@@ -1,7 +1,7 @@
 ---
 layout: page
 title: TrustedThings
-description: A collaborative on vulnerability discovery combining systems, formal methods, and dynamic software testing.
+description: TrustedThings builds practical security testing technology that helps organisations find software vulnerabilities before they become costly incidents.
 permalink: /trustedthings/
 hide_page_heading: true
 ---
@@ -34,22 +34,41 @@ hide_page_heading: true
         <a href="#media">Media</a>
       </nav>
       <p>
-        TrustedThings is a collaboration between <a href="https://cohney.info/">Shaanan Cohney</a>,
+        TrustedThings helps organisations find and prioritize security and privacy flaws in complex digital systems before
+        they become breaches or expensive remediation projects. We draw on organizational insight to help make this process more effective and work to drive business value.
+      </p>
+      <p>
+        Led by <a href="https://cohney.info/">Shaanan Cohney</a>,
         <a href="https://people.eng.unimelb.edu.au/tobym/">Toby Murray</a>, and
-        <a href="https://thuanpv.github.io/">Thuan Pham</a> focused on vulnerability discovery in
-        systems that are difficult to test.
+        <a href="https://thuanpv.github.io/">Thuan Pham</a>, the collaboration turns deep security
+        research into automated testing tools for APIs, software deployments, embedded systems, and
+        other products that are too complicated to check by hand.
       </p>
       <p>
-        The work integrates systems thinking, formal methods, and dynamic testing, building on prior
-        advances in scalable fuzzing and automated security testing. Current efforts include identifying
-        excessive data exposures, improving end-to-end Web API fuzzing, and linking program structure to
-        more effective test generation. The collaboration also supports joint student supervision and
-        contract-funded Masters projects in software security.
+        The team combines academic depth with a delivery track record: award-winning publications, a
+        provisional patent, government and industry-funded projects, and joint supervision of students
+        building software security capability.
       </p>
-      <p>
-        The team is multi-award-winning, with recognition including a Distinguished Paper Award at ICSE
-        2024 and the University of Melbourne FEIT Excellence Award in Mid-Career Research.
-      </p>
+      <details class="trustedthings-scientific">
+        <summary>
+          <span class="trustedthings-scientific__closed">View scientific version</span>
+          <span class="trustedthings-scientific__open">Hide scientific version</span>
+        </summary>
+        <div class="trustedthings-scientific__content">
+          <p>
+            TrustedThings is a collaboration between <a href="https://cohney.info/">Shaanan Cohney</a>,
+            <a href="https://people.eng.unimelb.edu.au/tobym/">Toby Murray</a>, and
+            <a href="https://thuanpv.github.io/">Thuan Pham</a> focused on vulnerability discovery in
+            systems that are difficult to test.
+          </p>
+          <p>
+            The work integrates systems thinking, formal methods, and dynamic testing, building on prior
+            advances in scalable fuzzing and automated security testing. Current efforts include detecting
+            excessive data exposures, improving end-to-end Web API fuzzing, strengthening stateful protocol
+            fuzzing, and linking program structure and code-review context to more effective test generation.
+          </p>
+        </div>
+      </details>
     </div>
   </section>
 
@@ -94,11 +113,11 @@ hide_page_heading: true
         <h2>What we work on</h2>
       </div>
       <ul class="trustedthings-list">
-        <li>Finding vulnerabilities in software systems that are hard to test with conventional methods.</li>
-        <li>Web APIs, stateful network protocols, and other systems with incomplete specifications, deep state, or weak bug oracles.</li>
-        <li>Automated testing methods that recover structure from real artefacts and use that structure to drive fuzzing.</li>
-        <li>Metamorphic fuzzing for excessive data exposure, end-to-end fuzzing for undocumented APIs, stronger stateful protocol fuzzing, and code-review-guided fuzzing.</li>
-        <li>Making vulnerability discovery work on systems that standard fuzzing handles poorly.</li>
+        <li>Finding vulnerabilities in software products that are too complex or fast-moving for manual review alone.</li>
+        <li>Detecting excessive data exposure in Web services before sensitive information leaks to the wrong users.</li>
+        <li>Testing Web APIs, network protocols, and embedded systems even when documentation is incomplete or behaviour depends on hidden state.</li>
+        <li>Building automated tools that learn from real software artefacts, code reviews, and system behaviour to generate better security tests.</li>
+        <li>Turning advanced fuzzing research into practical methods that partners can apply to difficult security testing problems.</li>
       </ul>
     </div>
     <div class="trustedthings-panel">
@@ -108,7 +127,7 @@ hide_page_heading: true
       </div>
       <ul class="trustedthings-list">
         <li>Joint PhD and Masters supervision, shared tool-building, and partner-linked project work in automated software security.</li>
-        <li>Recent student work spanning Web API security testing, protocol fuzzing and reverse engineering, and source-code- and review-guided test generation.</li>
+        <li>Recent student work spanning Web API security testing, protocol reverse engineering, and security tests guided by source code and code review.</li>
       </ul>
     </div>
   </section>
