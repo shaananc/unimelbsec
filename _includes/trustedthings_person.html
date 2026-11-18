@@ -6,6 +6,11 @@
 {% if include.person.image and include.person.image != "" %}
   {% assign image_url = include.person.image | relative_url %}
 {% endif %}
+{% assign portraits = site.data.portraits[include.person.image] %}
+{% assign portrait_sizes = "(max-width: 720px) 200px, 150px" %}
+{% if include.lead %}
+  {% assign portrait_sizes = "(max-width: 720px) 204px, (max-width: 892px) calc((100vw - 150px) / 3), 254px" %}
+{% endif %}
 {% assign name_parts = include.person.title | split: " " %}
 {% assign first_initial = name_parts.first | slice: 0, 1 | upcase %}
 {% assign initials = first_initial %}
@@ -23,6 +28,9 @@
     data-person-name="{{ display_name | escape }}"
     data-person-role="{{ include.person.role | escape }}"
     data-person-image="{{ image_url | escape }}"
+    {% if portraits %}
+      data-person-srcset="{% include portrait_srcset.html variants=portraits %}"
+    {% endif %}
     data-person-alt="{{ include.person.alt | default: include.person.title | escape }}"
     data-person-initials="{{ initials | escape }}"
     data-person-profile-url="{{ include.person.profile_url | default: '' | escape }}"
@@ -31,7 +39,7 @@
     aria-controls="person-modal"
   >
     {% if include.person.image and include.person.image != "" %}
-      <img src="{{ include.person.image | relative_url }}" alt="{{ include.person.alt | default: include.person.title }}">
+      {% include person_portrait.html person=include.person variants=portraits sizes=portrait_sizes %}
     {% else %}
       <div class="trustedthings-person__placeholder" aria-hidden="true">{{ initials }}</div>
     {% endif %}

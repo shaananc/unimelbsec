@@ -1,0 +1,256 @@
+---
+"/static/images/full/Amir.jpg":
+- url: "/assets/portraits/Amir.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/Amir.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/Amir.jpg-704.webp"
+  width: 704
+"/static/images/full/Jingyi.jpg":
+- url: "/assets/portraits/Jingyi.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/Jingyi.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/Jingyi.jpg-684.webp"
+  width: 684
+"/static/images/full/Neil.webp":
+- url: "/assets/portraits/Neil.webp-176.webp"
+  width: 176
+- url: "/assets/portraits/Neil.webp-352.webp"
+  width: 352
+- url: "/assets/portraits/Neil.webp-480.webp"
+  width: 480
+"/static/images/full/NiDing.jpg":
+- url: "/assets/portraits/NiDing.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/NiDing.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/NiDing.jpg-704.webp"
+  width: 704
+"/static/images/full/Pengbo.jpg":
+- url: "/assets/portraits/Pengbo.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/Pengbo.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/Pengbo.jpg-640.webp"
+  width: 640
+"/static/images/full/Tian.jpg":
+- url: "/assets/portraits/Tian.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/Tian.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/Tian.jpg-704.webp"
+  width: 704
+"/static/images/full/Wenqi.jpg":
+- url: "/assets/portraits/Wenqi.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/Wenqi.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/Wenqi.jpg-704.webp"
+  width: 704
+"/static/images/full/Wentao_color.jpg":
+- url: "/assets/portraits/Wentao_color.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/Wentao_color.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/Wentao_color.jpg-602.webp"
+  width: 602
+"/static/images/full/ZheguangZhao.jpeg":
+- url: "/assets/portraits/ZheguangZhao.jpeg-176.webp"
+  width: 176
+- url: "/assets/portraits/ZheguangZhao.jpeg-352.webp"
+  width: 352
+- url: "/assets/portraits/ZheguangZhao.jpeg-704.webp"
+  width: 704
+"/static/images/full/aaron_headshot.jpeg":
+- url: "/assets/portraits/aaron_headshot.jpeg-176.webp"
+  width: 176
+- url: "/assets/portraits/aaron_headshot.jpeg-352.webp"
+  width: 352
+- url: "/assets/portraits/aaron_headshot.jpeg-704.webp"
+  width: 704
+"/static/images/full/andrew.jpeg":
+- url: "/assets/portraits/andrew.jpeg-176.webp"
+  width: 176
+- url: "/assets/portraits/andrew.jpeg-352.webp"
+  width: 352
+- url: "/assets/portraits/andrew.jpeg-532.webp"
+  width: 532
+"/static/images/full/ben.jpg":
+- url: "/assets/portraits/ben.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/ben.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/ben.jpg-704.webp"
+  width: 704
+"/static/images/full/chitchanok.jpg":
+- url: "/assets/portraits/chitchanok.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/chitchanok.jpg-250.webp"
+  width: 250
+"/static/images/full/faxing.jpg":
+- url: "/assets/portraits/faxing.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/faxing.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/faxing.jpg-704.webp"
+  width: 704
+"/static/images/full/feng-liu.png":
+- url: "/assets/portraits/feng-liu.png-176.webp"
+  width: 176
+- url: "/assets/portraits/feng-liu.png-352.webp"
+  width: 352
+- url: "/assets/portraits/feng-liu.png-704.webp"
+  width: 704
+"/static/images/full/haotian.jpg":
+- url: "/assets/portraits/haotian.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/haotian.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/haotian.jpg-704.webp"
+  width: 704
+"/static/images/full/jack.jpg":
+- url: "/assets/portraits/jack.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/jack.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/jack.jpg-704.webp"
+  width: 704
+"/static/images/full/jiahao.jpg":
+- url: "/assets/portraits/jiahao.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/jiahao.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/jiahao.jpg-640.webp"
+  width: 640
+"/static/images/full/jiankai.jpg":
+- url: "/assets/portraits/jiankai.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/jiankai.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/jiankai.jpg-600.webp"
+  width: 600
+"/static/images/full/joseph.jpg":
+- url: "/assets/portraits/joseph.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/joseph.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/joseph.jpg-704.webp"
+  width: 704
+"/static/images/full/lianglu.jpg":
+- url: "/assets/portraits/lianglu.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/lianglu.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/lianglu.jpg-640.webp"
+  width: 640
+"/static/images/full/nicholas.jpg":
+- url: "/assets/portraits/nicholas.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/nicholas.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/nicholas.jpg-704.webp"
+  width: 704
+"/static/images/full/olya.jpg":
+- url: "/assets/portraits/olya.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/olya.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/olya.jpg-540.webp"
+  width: 540
+"/static/images/full/robert.jpeg":
+- url: "/assets/portraits/robert.jpeg-176.webp"
+  width: 176
+- url: "/assets/portraits/robert.jpeg-352.webp"
+  width: 352
+- url: "/assets/portraits/robert.jpeg-480.webp"
+  width: 480
+"/static/images/full/shaanan.png":
+- url: "/assets/portraits/shaanan.png-176.webp"
+  width: 176
+- url: "/assets/portraits/shaanan.png-352.webp"
+  width: 352
+- url: "/assets/portraits/shaanan.png-508.webp"
+  width: 508
+"/static/images/full/shangqi.jpg":
+- url: "/assets/portraits/shangqi.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/shangqi.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/shangqi.jpg-704.webp"
+  width: 704
+"/static/images/full/thuan.jpg":
+- url: "/assets/portraits/thuan.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/thuan.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/thuan.jpg-400.webp"
+  width: 400
+"/static/images/full/toby.jpg":
+- url: "/assets/portraits/toby.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/toby.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/toby.jpg-652.webp"
+  width: 652
+"/static/images/full/udaya.jpg":
+- url: "/assets/portraits/udaya.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/udaya.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/udaya.jpg-704.webp"
+  width: 704
+"/static/images/full/viet.jpeg":
+- url: "/assets/portraits/viet.jpeg-176.webp"
+  width: 176
+- url: "/assets/portraits/viet.jpeg-200.webp"
+  width: 200
+"/static/images/full/xiangyu.jpg":
+- url: "/assets/portraits/xiangyu.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/xiangyu.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/xiangyu.jpg-704.webp"
+  width: 704
+"/static/images/full/xinyu.jpg":
+- url: "/assets/portraits/xinyu.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/xinyu.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/xinyu.jpg-460.webp"
+  width: 460
+"/static/images/full/xyuan.jpg":
+- url: "/assets/portraits/xyuan.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/xyuan.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/xyuan.jpg-704.webp"
+  width: 704
+"/static/images/full/yuhao-sun.JPG":
+- url: "/assets/portraits/yuhao-sun.JPG-176.webp"
+  width: 176
+- url: "/assets/portraits/yuhao-sun.JPG-352.webp"
+  width: 352
+- url: "/assets/portraits/yuhao-sun.JPG-704.webp"
+  width: 704
+"/static/images/full/yujin.jpg":
+- url: "/assets/portraits/yujin.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/yujin.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/yujin.jpg-704.webp"
+  width: 704
+"/static/images/full/zewei.jpg":
+- url: "/assets/portraits/zewei.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/zewei.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/zewei.jpg-704.webp"
+  width: 704
+"/static/images/full/zzy.jpg":
+- url: "/assets/portraits/zzy.jpg-176.webp"
+  width: 176
+- url: "/assets/portraits/zzy.jpg-352.webp"
+  width: 352
+- url: "/assets/portraits/zzy.jpg-704.webp"
+  width: 704

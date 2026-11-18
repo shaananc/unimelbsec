@@ -2,7 +2,7 @@
   <form class="person-modal__frame" method="dialog">
     <button class="person-modal__close" type="submit" aria-label="Close profile">Close</button>
     <div class="person-modal__layout">
-      <img class="person-modal__image" src="" alt="" hidden>
+      <img class="person-modal__image" alt="" sizes="220px" decoding="async" hidden>
       <div class="person-modal__placeholder" aria-hidden="true" hidden></div>
       <div class="person-modal__copy">
         <p class="eyebrow person-modal__eyebrow" id="person-modal-role"></p>
@@ -33,7 +33,13 @@
       activeKey = trigger.dataset.personKey || "";
 
       if (trigger.dataset.personImage) {
-        image.src = trigger.dataset.personImage;
+        if (trigger.dataset.personSrcset) {
+          image.srcset = trigger.dataset.personSrcset;
+          image.removeAttribute("src");
+        } else {
+          image.removeAttribute("srcset");
+          image.src = trigger.dataset.personImage;
+        }
         image.alt = trigger.dataset.personAlt || "";
         image.hidden = false;
         placeholder.hidden = true;
@@ -41,6 +47,7 @@
       } else {
         image.hidden = true;
         image.removeAttribute("src");
+        image.removeAttribute("srcset");
         image.alt = "";
         placeholder.textContent = trigger.dataset.personInitials || "";
         placeholder.hidden = false;

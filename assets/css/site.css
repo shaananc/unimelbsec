@@ -1,7 +1,6 @@
 :root {
-  --font-body: "Instrument Sans", "Helvetica Neue", sans-serif;
-  --font-display: "Instrument Serif", "Iowan Old Style", "Times New Roman", serif;
-  --font-meta: "Azeret Mono", "SFMono-Regular", ui-monospace, monospace;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: "Iowan Old Style", Georgia, serif;
   --bg: #f4efe8;
   --bg-strong: #e7ddd0;
   --surface: rgba(255, 252, 247, 0.84);
@@ -46,9 +45,7 @@ body {
   font-family: var(--font-body);
   font-size: var(--step-0);
   line-height: 1.6;
-  font-optical-sizing: auto;
   font-kerning: normal;
-  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -134,7 +131,6 @@ main {
 .site-header__brand-tagline {
   color: var(--accent);
   font-size: 0.74rem;
-  font-family: var(--font-meta);
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -262,14 +258,13 @@ h4 {
   margin: 0;
   font-family: var(--font-display);
   font-weight: 400;
-  line-height: 1.02;
-  letter-spacing: -0.016em;
+  line-height: 1.14;
+  letter-spacing: -0.019em;
 }
 
 .hero h1 {
-  font-size: clamp(1.6rem, 1.34rem + 0.72vw, 2rem);
-  max-width: none;
-  text-wrap: normal;
+  font-size: clamp(1.75rem, 1.48rem + 1.3vw, 2.55rem);
+  text-wrap: balance;
 }
 
 .hero__lede,
@@ -408,7 +403,7 @@ h4 {
     linear-gradient(135deg, rgba(143, 45, 31, 0.12), rgba(23, 32, 51, 0.08)),
     #e6ddd1;
   color: var(--muted);
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   font-size: clamp(1.35rem, 1.1rem + 0.5vw, 1.75rem);
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -425,14 +420,13 @@ h4 {
   margin: 0;
   color: var(--accent);
   font-size: 0.62rem;
-  font-family: var(--font-meta);
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .person-card h4 {
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   font-size: 0.84rem;
   font-weight: 700;
   line-height: 1.16;
@@ -534,7 +528,6 @@ h4 {
   margin: 0;
   color: var(--muted);
   font-size: 0.72rem;
-  font-family: var(--font-meta);
   font-weight: 500;
 }
 
@@ -592,7 +585,6 @@ h4 {
 .news-item__meta time {
   color: var(--muted);
   font-size: 0.76rem;
-  font-family: var(--font-meta);
   font-weight: 500;
 }
 
@@ -648,7 +640,6 @@ h4 {
 
 .writing-item__meta {
   font-size: 0.7rem;
-  font-family: var(--font-meta);
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -828,7 +819,7 @@ h4 {
 }
 
 .trustedthings-person h3 {
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   font-size: 0.84rem;
   font-weight: 700;
   letter-spacing: -0.01em;
@@ -979,7 +970,6 @@ h4 {
   margin: 0 0 0.28rem;
   color: var(--accent);
   font-size: 0.68rem;
-  font-family: var(--font-meta);
   font-weight: 500;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -1047,7 +1037,7 @@ h4 {
   border-radius: 18px;
   background: linear-gradient(160deg, rgba(217, 210, 200, 0.9), rgba(197, 188, 176, 0.9));
   color: rgba(23, 32, 51, 0.55);
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   font-size: clamp(2.2rem, 1.6rem + 1vw, 3rem);
   font-weight: 700;
   letter-spacing: -0.04em;
@@ -1334,11 +1324,5 @@ h4 {
 
   .person-modal__image {
     max-width: 220px;
-  }
-}
-
-@media (min-width: 960px) {
-  .hero h1 {
-    white-space: nowrap;
   }
 }

@@ -6,6 +6,7 @@
 {% if include.person.image and include.person.image != "" %}
   {% assign image_url = include.person.image | relative_url %}
 {% endif %}
+{% assign portraits = site.data.portraits[include.person.image] %}
 {% assign name_parts = include.person.title | split: " " %}
 {% assign first_initial = name_parts.first | slice: 0, 1 | upcase %}
 {% assign initials = first_initial %}
@@ -23,6 +24,9 @@
     data-person-name="{{ display_name | escape }}"
     data-person-role="{{ include.person.role | escape }}"
     data-person-image="{{ image_url | escape }}"
+    {% if portraits %}
+      data-person-srcset="{% include portrait_srcset.html variants=portraits %}"
+    {% endif %}
     data-person-alt="{{ include.person.alt | default: include.person.title | escape }}"
     data-person-initials="{{ initials | escape }}"
     data-person-profile-url="{{ include.person.profile_url | default: '' | escape }}"
@@ -31,12 +35,7 @@
     aria-controls="person-modal"
   >
     {% if include.person.image and include.person.image != "" %}
-      <img
-        class="person-card__image"
-        src="{{ include.person.image | relative_url }}"
-        alt="{{ include.person.alt | default: include.person.title }}"
-        loading="lazy"
-      >
+      {% include person_portrait.html person=include.person variants=portraits class="person-card__image" sizes="(max-width: 720px) 176px, 148px" %}
     {% else %}
       <div class="person-card__image person-card__image--placeholder" aria-hidden="true">
         <span>{{ initials }}</span>

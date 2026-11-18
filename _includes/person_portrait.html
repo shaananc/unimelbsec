@@ -1,0 +1,14 @@
+{% assign thumbnail = include.variants | first %}
+<img
+  {% if include.class %}class="{{ include.class }}"{% endif %}
+  {% if thumbnail %}
+    src="{{ thumbnail.url | relative_url }}"
+    srcset="{% include portrait_srcset.html variants=include.variants %}"
+    sizes="{{ include.sizes }}"
+  {% else %}
+    src="{{ include.person.image | relative_url }}"
+  {% endif %}
+  alt="{{ include.person.alt | default: include.person.title | escape }}"
+  loading="lazy"
+  decoding="async"
+>
