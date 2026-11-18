@@ -9,7 +9,7 @@ layout: default
 {% assign latest_news = site.news | sort: "path" | reverse %}
 {% assign featured_news = latest_news | slice: 0, 3 %}
 {% assign featured_news_pool = latest_news | slice: 0, 8 %}
-{% assign featured_writing = site.data.writing | slice: 0, 6 %}
+{% assign featured_writing = site.data.writing | sort: "date" | reverse | slice: 0, 6 %}
 
 <section class="hero">
   <div class="shell">

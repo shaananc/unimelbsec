@@ -3,7 +3,7 @@ layout: page
 title: Writing
 description: Public writing, commentary, interviews, and podcasts from the group.
 ---
-{% assign all_writing = site.data.writing %}
+{% assign all_writing = site.data.writing | sort: "date" | reverse %}
 <div class="writing-grid">
   {% for item in all_writing %}
     <article class="writing-item">
