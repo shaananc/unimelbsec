@@ -471,8 +471,8 @@ h4 {
   color: var(--muted);
 }
 
-#news .shell {
-  max-width: 43rem;
+#news {
+  padding-bottom: 1.45rem;
 }
 
 @media (min-width: 721px) {
@@ -607,6 +607,48 @@ h4 {
   font-size: 0.94rem;
   line-height: 1.52;
   max-width: 70ch;
+}
+
+.news-list--recent .news-item {
+  padding-block: 0.67rem;
+}
+
+@media (min-width: 650px) {
+  .news-list--recent .news-item {
+    display: grid;
+    grid-template-columns: 6.25rem minmax(0, 1fr);
+    align-items: baseline;
+    gap: 0.22rem 1.15rem;
+  }
+
+  .news-list--recent .news-item__meta {
+    display: grid;
+    gap: 0.12rem;
+    grid-row: span 2;
+    margin: 0;
+  }
+
+  .news-list--recent .news-item__title,
+  .news-list--recent .news-item__summary {
+    grid-column: 2;
+    margin: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .news-list--recent .news-item {
+    grid-template-columns: 6.25rem minmax(0, 2fr) minmax(0, 3fr);
+    column-gap: clamp(1.25rem, 2.3vw, 2rem);
+  }
+
+  .news-list--recent .news-item__meta {
+    grid-row: auto;
+  }
+
+  .news-list--recent .news-item__summary {
+    grid-column: 3;
+    font-size: 0.9rem;
+  }
 }
 
 .writing-grid {

@@ -189,8 +189,8 @@ layout: default
       <a class="section-link section-link--quiet" href="{{ '/news/' | relative_url }}">Browse the archive</a>
     </div>
 
-    <div class="news-list">
-      {% for item in latest_news limit: 10 %}
+    <div class="news-list news-list--recent">
+      {% for item in latest_news limit: 5 %}
         {% include news_item.html item=item use_home_title=true %}
       {% endfor %}
     </div>
